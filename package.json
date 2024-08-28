@@ -1,0 +1,23 @@
+{
+  "name": "faketwitter",
+  "type": "module",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd client && npm i && cd ../server && npm i",
+    "start": "cd client && npm run build && cd ../server && npm run start",
+    "dev": "concurrently \"cd client && npm run start\" \"cd ../server && npm run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
